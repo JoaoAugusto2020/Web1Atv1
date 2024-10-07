@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário Aqui</h1>
+
+    <!-- form: formulário -->
+    <!-- label: legenda do input, ajuda na acessibilidade -->
+    <!-- input: entrada do usuário -->
+    <form action="arquivo.php" method="GET">
+        <!-- types: -->
+        <!-- text: texto cru -->
+        <!-- email: valida o email -->
+        <!-- password: oculta a senha -->
+        <!-- required: campo obrigatório -->
+        <label for="campo-nome">Nome:</label>
+        <input id="campo-nome" type="text" placeholder="Digite seu nome" required>
+        <br><br>
+        <label for="campo-email">Email:</label>
+        <input id="campo-email" type="email" placeholder="Digite seu email" required>
+        <br><br>
+        <label for="campo-senha">Senha:</label>
+        <input id="campo-senha" type="password" placeholder="Digite sua senha">
+        <br><br>
+
+        <!-- <input type="radio"> -->
+
+        <br><br>
+        <input type="submit" value="Enviar Formulário">
+    </form>
+
+    <br><hr>
+
+    <a href="index.html">Voltar para o principal</a>
+</body>
+</html>
