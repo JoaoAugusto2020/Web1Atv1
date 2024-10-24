@@ -17,6 +17,8 @@
         <!-- email: valida o email -->
         <!-- password: oculta a senha -->
         <!-- required: campo obrigatório -->
+        <!-- radio: apenas uma opção para escolher -->
+        <!-- checkbox: várias opções para escolher -->
         <label for="campo-nome">Nome:</label>
         <input id="campo-nome" type="text" placeholder="Digite seu nome" required>
         <br><br>
@@ -27,7 +29,43 @@
         <input id="campo-senha" type="password" placeholder="Digite sua senha">
         <br><br>
 
-        <!-- <input type="radio"> -->
+
+        <h2>Animal de Estimação</h2>
+        <input type="radio" name="animal" id="dog" value="cachorro">
+        <label for="dog">Cachorro</label>
+        <br>
+        <input type="radio" name="animal" id="cat" value="gato">
+        <label for="cat">Gato</label>
+        <br>
+        <input type="radio" name="animal" id="bird" value="passarinho">
+        <label for="bird">Passarinho</label>
+        <br>
+
+        <h2>O que você tem em casa?</h2>
+        <input type="checkbox" name="item1" id="item1" value="tv">
+        <label for="item1">TV</label>
+        <br>
+        <input type="checkbox" name="item2" id="item2" value="tv">
+        <label for="item2">Geladeira</label>
+        <br>
+        <input type="checkbox" name="item3" id="item3" value="tv">
+        <label for="item3">computador</label>
+        <br>
+
+        <h2>Escolha uma cor</h2>
+        <select required name="cores">
+            <option disabled selected>Selecione uma cor</option>
+            <option value="vermelho">Vermelho</option>
+            <option value="vermelho">Verde</option>
+            <option value="vermelho">Azul</option>
+        </select>
+
+        <h2>Digite sua mensagem:</h2>
+        <textarea name="mensagem" cols="30" rows="10" placeholder="Digite aqui sua mensagem"></textarea>
+        <br>
+
+        <!-- Quando um button está dentro do formulário o comportamento padrão é de submit -->
+        <button>clique aqui</button>
 
         <br><br>
         <input type="submit" value="Enviar Formulário">
